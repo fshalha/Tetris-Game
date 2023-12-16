@@ -31,6 +31,11 @@ public:
     {
         return blocks;
     }
+    int getWidth() const {
+    if (blocks.empty()) return 0;
+    return blocks[0].size(); // Assuming blocks is a 2D vector representing the piece
+}
+
 
 private:
     Type type;

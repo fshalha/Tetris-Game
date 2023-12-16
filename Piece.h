@@ -10,6 +10,8 @@ public:
     Piece(Type type);
     void rotate();
     const std::vector<std::vector<int>>& getBlocks() const;
+    int getWidth() ;
+
 
 private:
     Type type;
